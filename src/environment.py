@@ -176,7 +176,7 @@ class SnakeGameAI:
         ]
         idx = clock_wise.index(self.direction)
 
-        if pygame.math.Vector2(action).length() == 0:
+        if sum(action) == 0:
             # Fallback if action is an empty vector [0, 0, 0]
             new_dir = self.direction
         elif action[0] == 1:
