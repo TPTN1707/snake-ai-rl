@@ -1,7 +1,10 @@
 from src.agent import Agent
 from src.environment import SnakeGameAI
 from src.utils.helper import plot
+import torch
 
+# Limit PyTorch to a single thread to prevent GIL conflicts with Pygame and Matplotlib GUI threads
+torch.set_num_threads(1)
 
 def train():
     """Main training loop for the Snake RL Agent."""
