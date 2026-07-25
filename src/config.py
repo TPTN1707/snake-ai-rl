@@ -2,7 +2,7 @@
 BLOCK_SIZE = 20  # Pixel size of each grid cell
 WINDOW_WIDTH = 640  # Total width of the game window
 WINDOW_HEIGHT = 480  # Total height of the game window
-GAME_SPEED = 120  # Set high (e.g., 120+) for fast training, lower (e.g., 20) to watch comfortably
+GAME_SPEED = 80  # Set high (e.g., 120+) for fast training, lower (e.g., 20) to watch comfortably
 
 # RGB Colors
 COLOR_WHITE = (255, 255, 255)
