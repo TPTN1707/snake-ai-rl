@@ -38,7 +38,7 @@ class SnakeGameAI:
         # Initialize display
         self.display = pygame.display.set_mode((self.w, self.h))
         pygame.display.set_caption("Snake AI - Reinforcement Learning")
-        self.clock = pygame.clock.get_timer() if hasattr(pygame.clock, "get_timer") else pygame.time.Clock()
+        self.clock = pygame.time.Clock()
         self.reset()
 
     def reset(self):
