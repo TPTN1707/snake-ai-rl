@@ -57,7 +57,7 @@ def train():
             # Record scores for real-time visualization
             plot_scores.append(score)
             total_score += score
-            mean_score = total_score / agent.n_games
+            mean_score = total_score / len(plot_scores)
             plot_mean_scores.append(mean_score)
 
             # Dynamically update the progress graph
